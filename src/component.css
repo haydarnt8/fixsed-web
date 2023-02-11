@@ -1,0 +1,59 @@
+/* .introtext{
+    clip-path: polygon(0 0, 41% 0, 16% 100%, 0 100%);
+    backdrop-filter: blur(17px);
+    background-color: rgba(17, 40, 216, 0.42);
+
+
+} */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 100; */
+}
+
+.nav {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 41.15%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(7.5px);
+    /* background-color: rgba(255, 255, 255, 0.489);
+    backdrop-filter: blur(17px); */
+    /* background-color: tomato; */
+    /* backdrop-filter: invert(10%); */
+    /* height: 30px; */
+    /* color: #fff; */
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    /* text-align: center; */
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    transition: .4s ease-in-out;
+  }
+
+
+
+
+  /* const [show , setshow] = useState(true)
+  const oldscroll = useRef(0)
+
+
+  
+  useEffect(() => {
+    const handleScroll = event => {
+      if (window.scrollY > oldscroll.current){
+        setshow(false )
+        console.log(oldscroll.current + "olllld")
+      }
+      else{
+        setshow(true)
+        console.log(oldscroll.current + "newww")
+      }
+      oldscroll.current = window.scrollY
+    };
+    // console.log(oldscroll.current + "aaaaaa") 
+    // console.log(show)
+
+    window.addEventListener('scroll', handleScroll);
+
+  }, []); */
