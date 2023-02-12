@@ -1,8 +1,33 @@
 import React from 'react'
 import bg2 from '../image/bg2.jpg'
 import logo from '../image/logo2.png'
+import { useState, useEffect, useRef } from 'react';
+
+
 
 const Section2 = () => {
+
+  const [backgroundSize, setBackgroundSize] = useState('auto');
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const updateBackgroundSize = () => {
+      const aspectRatioImage = 4 / 3;
+      const aspectRatioContainer = containerRef.current.offsetWidth / containerRef.current.offsetHeight;
+
+      setBackgroundSize(
+        aspectRatioImage > aspectRatioContainer
+          ? `${100 * (aspectRatioContainer / aspectRatioImage)}% auto`
+          : `auto ${100 * (aspectRatioImage / aspectRatioContainer)}%`
+      );
+    };
+
+    window.addEventListener('resize', updateBackgroundSize);
+    updateBackgroundSize();
+
+    return () => window.removeEventListener('resize', updateBackgroundSize);
+  }, []);
+
   return (
     <>
     <div className=' flex w-full h-screen '>
@@ -37,10 +62,13 @@ const Section2 = () => {
             </div>
 
         </div>
-        <div className='h-full w-1/2' style={{backgroundImage: `url(${bg2})`,
+        <div className='h-full w-1/2' ref={containerRef} style={{backgroundImage: `url(${bg2})`,
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    backgroundSize: "cover"
+    backgroundSize: backgroundSize,
+    backgroundPosition:"right center",
+    position: 'relative',
+    // backgroundPosition: "center"
     }}>
             jojjo
         </div>
@@ -50,3 +78,5 @@ const Section2 = () => {
 }
 
 export default Section2
+
+// scale = max(background_positioning_area_width / background_image_width, background_positioning_area_height / background_image_height)
