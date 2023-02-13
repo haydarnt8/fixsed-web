@@ -21,8 +21,11 @@ const Section1 = () => {
                 <p className='dis'>Navigate the complex world of drone legality with IHL <br />
                   Learn about international humanitarian law's<br />
                   impact on drone use during armed conflict <br />
-                  for the protection of civilians<br />
+                  for the protection of civilians.<br />
                   </p>
+                  <button className='w-28 h-9 mt-7'>
+                    <p>Lern More</p>
+                  </button>
               </div>
             </div>
         </div>
