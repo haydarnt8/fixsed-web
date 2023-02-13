@@ -1,3 +1,17 @@
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #2E383F;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #000000;
+border: 1px solid #ffffff2a;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+background-color: #555555;
+}
+
 .App {
   text-align: center;
 }

@@ -1,18 +1,62 @@
-/* .introtext{
-    clip-path: polygon(0 0, 41% 0, 16% 100%, 0 100%);
-    backdrop-filter: blur(17px);
-    background-color: rgba(17, 40, 216, 0.42);
+@font-face {
+  font-family:circularBlack ;
+  src: url(./font/CircularStd-Black.otf);
+}
+@font-face {
+  font-family: circularLight;
+  src: url(./font/CircularStd-Light.otf);
+}
+.png{
+  /* border: 4px saddlebrown solid; */
+  height: 28rem;
+  width: 75rem;
+  margin-left: 35vw;
+  margin-top: 42vh;
+  /* position: absolute;
+  right: 0;
+  bottom: 10px; */
+}
 
+.pnglogo{
+  filter: drop-shadow(#ffffff);
+  -webkit-filter: drop-shadow(0px 0px 3px #ffffff62);
+}
 
-} */
+.title{
+  /* border: 4px saddlebrown solid; */
+  
+  
+  margin-top: 5vh;
+  margin-left: -14vw;
+}
 
+.head{
+  color: white;
+  text-shadow: #ffffffaf 0px 0px 5px, 0px 0px 0px rgba(0,0,0,0);
+  font-family: circularBlack ;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.dis{
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
+  color: rgb(175, 175, 175);
+  font-family:circularLight ;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
 
-/* style={{backgroundImage: `url(${bg2})`,
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
-    backgroundSize: "100% 100%"
-    }} */
+.intro{
+  background: rgb(54,69,79);
+  background: linear-gradient(135deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%);
+}
 
+.paragraph{
+  background-color: transparent;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+}
+  
 
 .image{
   position: fixed;
@@ -42,8 +86,10 @@
 }
 
 .nav {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 41.15%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(7.5px);
+  font: 1.4em sans-serif;
+  color: white;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 41.15%, rgba(255, 255, 255, 0) 100%); */
+    /* backdrop-filter: blur(1px); */
     /* background-color: rgba(255, 255, 255, 0.489);
     backdrop-filter: blur(17px); */
     /* background-color: tomato; */
@@ -62,26 +108,133 @@
 
 
 
-  /* const [show , setshow] = useState(true)
-  const oldscroll = useRef(0)
 
 
-  
-  useEffect(() => {
-    const handleScroll = event => {
-      if (window.scrollY > oldscroll.current){
-        setshow(false )
-        console.log(oldscroll.current + "olllld")
-      }
-      else{
-        setshow(true)
-        console.log(oldscroll.current + "newww")
-      }
-      oldscroll.current = window.scrollY
-    };
-    // console.log(oldscroll.current + "aaaaaa") 
-    // console.log(show)
 
-    window.addEventListener('scroll', handleScroll);
 
-  }, []); */
+
+
+
+
+
+  .header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    
+}
+
+.header-bg{
+  background-color: rgba(0,0,0,.9);
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.header .nav-menu a {
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
+}
+
+.header .navbar img {
+    width: 250px;
+    height: auto;
+}
+
+.header .nav-menu {
+    font-family: circularBlack;
+    font-size: 1.3em;
+    display: flex;
+}
+
+.header .nav-item {
+    padding: 1.1rem;
+    font-weight: 400;
+}
+
+.header .nav-item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: rgba(0,0,0,.9);
+        width: 100%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+      /* <div className='nav w-full flex justify-around items-center h-24'
+      style={Class ? {top:0} : {top:-96} } >
+        <div className='w-48 p-9'>
+          <img src={logo} alt={logo} />
+        </div>
+
+        <div className=' w-3/5'>
+            <div className='flex justify-around'>
+                <a  href="#home">Home</a>
+                <a  href="#home">contery</a>
+                <a  href="#home">International</a>
+                <a  href="#about">About</a>
+                <a  href="#contact">Contact</a>
+                <a  href="#home">Home</a>
+            </div>
+        </div>
+      </div>  */

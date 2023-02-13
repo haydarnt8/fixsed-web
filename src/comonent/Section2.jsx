@@ -1,36 +1,25 @@
 import React from 'react'
 import bg2 from '../image/bg2.jpg'
 import logo from '../image/logo2.png'
-import { useState, useEffect, useRef } from 'react';
 
 
 
 const Section2 = () => {
 
-  const [backgroundSize, setBackgroundSize] = useState('auto');
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const updateBackgroundSize = () => {
-      const aspectRatioImage = 4 / 3;
-      const aspectRatioContainer = containerRef.current.offsetWidth / containerRef.current.offsetHeight;
-
-      setBackgroundSize(
-        aspectRatioImage > aspectRatioContainer
-          ? `${100 * (aspectRatioContainer / aspectRatioImage)}% auto`
-          : `auto ${100 * (aspectRatioImage / aspectRatioContainer)}%`
-      );
-    };
-
-    window.addEventListener('resize', updateBackgroundSize);
-    updateBackgroundSize();
-
-    return () => window.removeEventListener('resize', updateBackgroundSize);
-  }, []);
 
   return (
     <>
     <div className=' flex w-full h-screen '>
+        <div className='h-full w-1/2' style={{backgroundImage: `url(${bg2})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "50% auto",
+        backgroundAttachment: "fixed",
+        // backgroundPosition:"center",
+        // backgroundSize:"cover",
+        // backgroundPosition:"right",
+      }}>
+            jojjo
+        </div>
         <div className='h-full w-1/2  bg-slate-400 p-9 justify-center items-center flex-col' >
             <div className=' flex justify-center items-center flex-col'>
                 <img src={logo} alt={logo} className='w-32 border-2 border-black' />
@@ -61,17 +50,7 @@ const Section2 = () => {
                 </ul>
             </div>
 
-        </div>
-        <div className='h-full w-1/2' ref={containerRef} style={{backgroundImage: `url(${bg2})`,
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
-    backgroundSize: backgroundSize,
-    backgroundPosition:"right center",
-    position: 'relative',
-    // backgroundPosition: "center"
-    }}>
-            jojjo
-        </div>
+          </div>
     </div>
     </>
   )
