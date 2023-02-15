@@ -6,95 +6,11 @@
   font-family: circularLight;
   src: url(./font/CircularStd-Light.otf);
 }
-.png{
-  /* border: 4px saddlebrown solid; */
-  height: 28rem;
-  width: 75rem;
-  margin-left: 35vw;
-  margin-top: 42vh;
-  /* position: absolute;
-  right: 0;
-  bottom: 10px; */
-}
-
-.pnglogo{
-  filter: drop-shadow(#ffffff);
-  -webkit-filter: drop-shadow(0px 0px 3px #ffffff62);
-}
-
-.title{
-  /* border: 4px saddlebrown solid; */
-  
-  
-  margin-top: 5vh;
-  margin-left: -14vw;
-}
-
-.head{
-  color: white;
-  text-shadow: #ffffffaf 0px 0px 5px, 0px 0px 0px rgba(0,0,0,0);
-  font-family: circularBlack ;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.dis{
-  text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
-  color: rgb(175, 175, 175);
-  font-family:circularLight ;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.intro{
-  background: rgb(54,69,79);
-  background: linear-gradient(135deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%);
-}
-
-.title button{
-  /* border: 2px #2E383F solid; */
-  -webkit-box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0);
-  background-color: #ffffff;
-  border-radius: 0.5em;
-}
-
-.title button p{
-  font-family: circularBlack ;
-  color: #2E383F;
-  /* border-radius: 0.8em; */
-}
-
-.paragraph{
-  background-color: transparent;
-  position: absolute;
-  left: 20%;
-  top: 25%;
-}
-  
-
-.image{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-}
-.pos{
-  border: 5px black solid;
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-  width: 100%;
-  height: 100%;
-  /* background-image: url(./image/bg2.jpg); */
-
-}
 
 
-  .header {
+/* Header Section */
+
+.header {
     position: fixed;
     height: 90px;
     width: 100%;
@@ -189,6 +105,78 @@
     .header .navbar img {
         width: 150px;
     }
+  }
+  
+  
+  
+  /* Section one */
+  
+  .bg-img{
+    height: 28rem;
+    width: 75rem;
+    margin-left: 35vw;
+    margin-top: 42vh; 
+  }
+  
+  .pnglogo{
+    filter: drop-shadow(#e4e6e6);
+    -webkit-filter: drop-shadow(0px 0px 3px #ffffff62);
+  }
+  
+  .intro{
+    /* background: #181824; */
+    background: rgb(54,69,79);
+    background: linear-gradient(135deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%);
+  }
+
+  .s1container{
+    background-color: transparent;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    margin-top: 5vh;
+    margin-left: -14vw;
+  }
+  
+  .s1container button p{
+    font-family: circularBlack ;
+    color: #2E383F;
+  }
+  
+  .s1container button{
+    -webkit-box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #ffffff;
+    border-radius: 0.5em;
+  }
+
+  .s1container .title{
+  color: white;
+  text-shadow: #ffffffaf 0px 0px 5px, 0px 0px 0px rgba(0,0,0,0);
+  font-family: circularBlack ;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  }
+  .s1container .content{
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
+  color: rgb(175, 175, 175);
+  font-family:circularLight ;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  }
+
+
+
+/* Section tow */
+  
+
+.s2container{
+  /* background: rgb(255, 255, 255); */
+  /* background: linear-gradient(28deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%); */
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
+  color: #B3873D;
+  font-family:circularLight ;
+  font-size: 1rem;
 }
 
 
@@ -198,20 +186,107 @@
 
 
 
-      /* <div className='nav w-full flex justify-around items-center h-24'
-      style={Class ? {top:0} : {top:-96} } >
-        <div className='w-48 p-9'>
-          <img src={logo} alt={logo} />
-        </div>
+/* Section three */
 
-        <div className=' w-3/5'>
-            <div className='flex justify-around'>
-                <a  href="#home">Home</a>
-                <a  href="#home">contery</a>
-                <a  href="#home">International</a>
-                <a  href="#about">About</a>
-                <a  href="#contact">Contact</a>
-                <a  href="#home">Home</a>
-            </div>
-        </div>
-      </div>  */
+.s3container{
+
+}
+
+
+
+
+
+
+/* Section Four */
+
+
+  .s4container{
+    /* border: #ffffff 8px solid; */
+    width: 70% ;
+    height: 75%;
+    background-color: #1c1c1c94;
+    padding: 5em;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .countrycard{
+    margin: 1em;
+    padding: 16px;
+    display:flex ;
+    /* justify-content:center ; */
+    /* align-items: center; */
+    background-color: #151515;
+    height: 277px;
+    width: 187px;
+    border-radius: 2%;
+    flex-direction: column;
+
+  }
+
+  .countrycard .image{
+    height: 155px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+    margin-bottom: 16px; 
+  }
+
+  .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .countrycard .content{
+    height: auto;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .content .title{
+    font-family: circularBlack;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+
+  .content .description{
+    font-family: circularLight;
+    color: #a2a2a2;
+    font-size: 0.875rem;
+    overflow: hidden;
+  }
+
+
+
+
+/* .image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+} */
+
+/* .pos{
+  border: 5px black solid;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/bg2.jpg);
+
+} */
+

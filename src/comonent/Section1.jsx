@@ -4,30 +4,26 @@ import bg1 from '../image/bg1.webp'
 import '../component.css'
 const Section1 = () => {
   return (
-    <>    
-        <div id='Home' className='intro flex w-full h-screen justify-center '>
-            <div className='png flex ' style={{backgroundImage: `url(${bg1})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            // backgroundAttachment: "fixed",
-            // backgroundColor: "black"
-            }}>
-            </div>
-            <div className='paragraph flex   justify-center flex-col items-center'>
-              <div className='logo object-cover'>
-              </div>
-              <div className='title  '>
-                <p className='head'>DRONE UNDER INTERNATIONAL HUMANITARIAN</p>
-                <p className='dis'>Navigate the complex world of drone legality with IHL <br />
-                  Learn about international humanitarian law's<br />
-                  impact on drone use during armed conflict <br />
-                  for the protection of civilians.<br />
-                  </p>
-                  <button className='w-28 h-9 mt-7'>
-                    <p>Lern More</p>
-                  </button>
-              </div>
-            </div>
+      <>    
+        <div id='home' className='intro flex w-full h-screen justify-center '>
+          <div className='bg-img flex '
+           style={{backgroundImage: `url(${bg1})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          }}
+          >
+          </div>
+          <div className='s1container'>
+            <p className='title'>DRONE UNDER INTERNATIONAL HUMANITARIAN</p>
+            <p className='content'>Navigate the complex world of drone legality with IHL <br />
+              Learn about international humanitarian law's<br />
+              impact on drone use during armed conflict <br />
+              for the protection of civilians.<br />
+            </p>
+            <button className='w-28 h-10 mt-7'>
+              <p>Lern More</p>
+            </button>
+          </div>
         </div>
     </>
   )

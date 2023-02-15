@@ -33,7 +33,7 @@ const Headar = () => {
   const changeColor =useCallback(
     e => {
     const window = e.currentTarget;
-    if (window.scrollY >= 120) {
+    if (window.scrollY >= 250) {
       setColor(true)
     }
     else {
@@ -68,7 +68,7 @@ const Headar = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <a href='/' onClick={closeMenu}>Home</a>
+                        <a href='#home' onClick={closeMenu}>Home</a>
                     </li>
                     <li className='nav-item'>
                         <a href='#about' onClick={closeMenu}>About</a>
