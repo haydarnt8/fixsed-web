@@ -1,13 +1,14 @@
 import React from 'react'
 import bg4 from '../image/bg4.jpg'
+import bg from '../image/s4.jpg'
 
 const Section4 = () => {
   return (
     <>
     <div className=' flex w-full h-full justify-center items-center ' 
     style={{
-    // backgroundImage: `url(${bg4})`,
-    backgroundColor:"#2C1F29",
+    backgroundImage: `url(${bg})`,
+    // backgroundColor:"#2C1F29",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     backgroundSize: "cover"

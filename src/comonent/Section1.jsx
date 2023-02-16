@@ -1,13 +1,21 @@
 import React from 'react'
+import s1 from '../image/s1.jpg'
 import bg1 from '../image/bg1.webp'
+import bg2 from '../image/bg2.png'
 // import logo2 from '../image/logo1.png'
 import '../component.css'
 const Section1 = () => {
   return (
       <>    
-        <div id='home' className='intro flex w-full h-screen justify-center '>
+        <div id='home' className='intro flex w-full h-screen justify-center '      style={{backgroundImage: `url(${s1})`,
+      // backgroundColor:"#D6E3D9",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundAttachment: "fixed",
+      }}>
+
           <div className='bg-img flex '
-           style={{backgroundImage: `url(${bg1})`,
+           style={{backgroundImage: `url(${bg2})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
           }}
@@ -20,7 +28,7 @@ const Section1 = () => {
               impact on drone use during armed conflict <br />
               for the protection of civilians.<br />
             </p>
-            <button className='w-28 h-10 mt-7'>
+            <button className='w-28 h-10 mt-9'>
               <p>Lern More</p>
             </button>
           </div>

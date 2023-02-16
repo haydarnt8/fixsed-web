@@ -1,5 +1,5 @@
 import React from 'react'
-import bg3 from '../image/bg3.jpg'
+import s3 from '../image/s3.png'
 
 const Section3 = () => {
   return (
@@ -9,7 +9,7 @@ const Section3 = () => {
               jojjo
           </div>
           <div className='h-full w-1/2' style={{
-            // backgroundImage: `url(${bg3})`,
+            backgroundImage: `url(${s3})`,
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
             backgroundSize: "50% auto",

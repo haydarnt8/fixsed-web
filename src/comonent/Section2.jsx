@@ -1,7 +1,7 @@
 import React from 'react'
-import bg2 from '../image/bg2.jpg'
+import s2 from '../image/s22.png'
 import logo from '../image/logo2.png'
-import bg1 from '../image/bg1.webp'
+// import bg1 from '../image/bg1.webp'
 
 
 
@@ -12,8 +12,8 @@ const Section2 = () => {
     <>
     <div className=' flex w-full h-screen '>
       <div className='h-full w-1/2' 
-      style={{backgroundImage: `url(${bg1})`,
-      backgroundColor:"#D6E3D9",
+      style={{backgroundImage: `url(${s2})`,
+      // backgroundColor:"#D6E3D9",
       backgroundRepeat: "no-repeat",
       backgroundSize: "50% auto",
       backgroundAttachment: "fixed",

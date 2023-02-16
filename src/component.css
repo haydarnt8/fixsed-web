@@ -38,7 +38,7 @@
 
 .header .nav-menu a {
     color: #ffffff;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.562);
 }
 
 .header .navbar img {
@@ -124,9 +124,11 @@
   }
   
   .intro{
-    /* background: #181824; */
-    background: rgb(54,69,79);
-    background: linear-gradient(135deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%);
+    background: #181824;
+    /* background: rgb(54,69,79);
+    background: linear-gradient(135deg, rgba(54,69,79,1) 0%, rgba(31,31,31,1) 100%); */
+    /* background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(176,214,245,1) 17%, rgba(4,135,226,1) 57%, rgba(4,99,202,1) 100%);  */
   }
 
   .s1container{
@@ -144,22 +146,24 @@
   }
   
   .s1container button{
-    -webkit-box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 8px 0px 0px 0px #A87E68, 0px 8px 0px 0px #685653, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 8px 0px 0px 0px #9FD7FD, 0px 8px 0px 0px #9FD7FD, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 8px 0px 0px 0px #9FD7FD, 0px 8px 0px 0px #9FD7FD, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0);
     background-color: #ffffff;
     border-radius: 0.5em;
   }
 
   .s1container .title{
-  color: white;
-  text-shadow: #ffffffaf 0px 0px 5px, 0px 0px 0px rgba(0,0,0,0);
+  /* color: white; */
+  color: #385075;
+  text-shadow: #38507580 0px 0px 5px, 0px 0px 0px rgba(0,0,0,0);
   font-family: circularBlack ;
   font-size: 3rem;
   margin-bottom: 1rem;
   }
   .s1container .content{
-  text-shadow: 0px 2px 5px rgba(0,0,0,0.85);
-  color: rgb(175, 175, 175);
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.24);
+  /* color: rgb(175, 175, 175); */
+  color: #385075;
   font-family:circularLight ;
   font-size: 1.5rem;
   margin-top: 0.5rem;

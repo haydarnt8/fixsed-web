@@ -1,5 +1,5 @@
 import React from 'react'
-import bg5 from '../image/bg5.jpg'
+// import bg5 from '../image/bg5.jpg'
 const Section5 = () => {
   return (
     <>
