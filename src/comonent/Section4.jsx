@@ -1,5 +1,5 @@
 import React from 'react'
-import bg4 from '../image/bg4.jpg'
+import bg4 from '../image/iraq.jpg'
 import bg from '../image/s4.jpg'
 
 const Section4 = () => {
@@ -8,18 +8,17 @@ const Section4 = () => {
     <div className=' flex w-full h-full justify-center items-center ' 
     style={{
     backgroundImage: `url(${bg})`,
-    // backgroundColor:"#2C1F29",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     backgroundSize: "cover"
     }}>
 
       <div className='s4container mt-16 mb-16'>
-        <div className='flex flex-col items-center justify-center mb-8'>
-          <p className=''>
+        <div className='head flex flex-col items-center justify-center mb-8'>
+          <p className='title text-4xl mb-5'>
             Drone law in some Middle Eastern countries
           </p>
-          <p>
+          <p className='content text-xl text-center font-medium'>
           Middle Eastern countries have varied drone laws ranging from restrictive to permissive,
            with regulations focused on national security and privacy concerns
           </p>

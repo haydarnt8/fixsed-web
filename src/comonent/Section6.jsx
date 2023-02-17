@@ -1,21 +1,20 @@
 import React from 'react'
-// import bg from '../image/bg6.jpg'
+import s6 from '../image/s6.png'
 
 const Section6 = () => {
   return (
     <>
         <div className=' flex w-full h-screen ' >
             <div className='h-full w-1/2'>
-                jojjo
             </div>
             <div className='h-full w-1/2 ' style={{
-                // backgroundImage: `url(${bg})`,
-            backgroundColor: "#6FBFB6",
+            backgroundImage: `url(${s6})`,
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
-            backgroundSize: "cover"
+            backgroundSize: "50% auto",
+            backgroundPosition:"right",
             }}>
-                pkpkp
+
             </div>
         </div>
     </>

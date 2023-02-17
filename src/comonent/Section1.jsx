@@ -7,7 +7,7 @@ import '../component.css'
 const Section1 = () => {
   return (
       <>    
-        <div id='home' className='intro flex w-full h-screen justify-center '      style={{backgroundImage: `url(${s1})`,
+        <div id='home' className=' intro max-h-full min-h-screen flex w-full  justify-center  '      style={{backgroundImage: `url(${s1})`,
       // backgroundColor:"#D6E3D9",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
@@ -22,8 +22,8 @@ const Section1 = () => {
           >
           </div>
           <div className='s1container'>
-            <p className='title'>DRONE UNDER INTERNATIONAL HUMANITARIAN</p>
-            <p className='content'>Navigate the complex world of drone legality with IHL <br />
+            <p className='title text-5xl'>DRONE UNDER INTERNATIONAL HUMANITARIAN</p>
+            <p className='content text-2xl '>Navigate the complex world of drone legality with IHL <br />
               Learn about international humanitarian law's<br />
               impact on drone use during armed conflict <br />
               for the protection of civilians.<br />
