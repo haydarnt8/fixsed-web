@@ -196,9 +196,6 @@ html, body {
     -webkit-filter: drop-shadow(0px 0px 3px #ffffff62);
   }
   
-  /* .intro{
-
-  } */
 
   .s1container{
     
@@ -214,10 +211,6 @@ html, body {
   
   }
   
-  .s1container button p{
-    /* font-family: circularBlack ; */
-    color: #2E383F;
-  }
   
   .s1container button{
     /* -webkit-box-shadow: 8px 0px 0px 0px #9FD7FD, 0px 8px 0px 0px #9FD7FD, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
@@ -280,14 +273,6 @@ html, body {
 }
 
 
-.s2container button{
-  /* -webkit-box-shadow: 8px 0px 0px 0px #9FD7FD, 0px 8px 0px 0px #9FD7FD, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 8px 0px 0px 0px #9FD7FD, 0px 8px 0px 0px #9FD7FD, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #3D6B94, 5px 5px 15px 5px rgba(0,0,0,0);
-  background-color: #ffffff;
-  border-radius: 0.5em; */
-  
-}
-
 
 
 /* Section three */
@@ -305,72 +290,46 @@ html, body {
 
 .head .title{
   font-family: circularBlack ;
-  color: #e3e3e3;
+  /* color: #e3e3e3; */
 }
 
 .head .content{
   font-family:circularLight;
-  color: #e3e3e3;
+  /* color: #e3e3e3; */
 }
 
 
   .s4container{
-    /* border: #ffffff 8px solid; */
-    width: 70% ;
-    height: 80%;
-    background-color: #2f2f2fa9;
-    padding: 5em;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+    /* background-color: #000000d8; */
+
   }
 
   .countrycard{
-    margin: 1em;
-    padding: 16px;
-    display:flex ;
-    /* justify-content:center ; */
-    /* align-items: center; */
-    background-color: #151515;
-    height: 295px;
-    width: 214px;
-    border-radius: 2%;
-    flex-direction: column;
+    border: 1px solid #151515;
+    max-width: 33%;
+    min-width: 30rem;
+    margin: 0.125rem;
 
   }
 
-  .countrycard .image{
-    height: 155px;
-    width: 100%;
+  .countrycard img{
+    filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
+    -webkit-filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
+    -moz-filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
+  }
+
+  .countrycard .title{
+    font-family: circularBlack;
+    color: #151515;
     overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
-    margin-bottom: 16px; 
-  }
-
-  .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   .countrycard .content{
-    height: auto;
-    width: 100%;
-    display:flex ;
-    flex-direction: column;
     overflow: hidden;
+    font-family: circularLight;
+    color: #151515;
   }
 
-  .content .title{
-    font-family: circularBlack;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    margin-bottom: 6px;
-    overflow: hidden;
-  }
 
   .content .description{
     font-family: circularLight;

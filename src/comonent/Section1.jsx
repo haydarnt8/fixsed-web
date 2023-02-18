@@ -1,6 +1,6 @@
 import React from 'react'
 import s1 from '../image/s1.jpg'
-import bg1 from '../image/bg1.webp'
+// import bg1 from '../image/bg1.webp'
 import bg2 from '../image/bg2.png'
 // import logo2 from '../image/logo1.png'
 import '../component.css'
