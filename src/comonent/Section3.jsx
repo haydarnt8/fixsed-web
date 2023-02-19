@@ -1,5 +1,5 @@
 import React from 'react'
-import s3 from '../image/s3.png'
+import s3 from '../image/s3.jpg'
 import card from '../image/card.avif'
 
 const Section3 = () => {

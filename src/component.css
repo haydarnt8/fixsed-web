@@ -437,4 +437,6 @@ src/component.css
 
 
 
- 
+ .sheesh{
+  transition: 3s ease;
+ }

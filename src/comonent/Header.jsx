@@ -17,16 +17,28 @@ const Headar = () => {
 
   const handleNavigation = useCallback(
     e => {
-      const window = e.currentTarget;
-      if (Scroll.current  > window.scrollY) {
-        setClass(true)
-        console.log("worktrue")
-      } else if (Scroll.current  < window.scrollY) {
-        setClass(false) 
-        console.log("workfalse")
-      }
-      Scroll.current=window.scrollY;
 
+      // const window = e.currentTarget;
+      // if (Scroll.current  > window.scrollY) {
+      //   setClass(true)
+      //   console.log("worktrue")
+      // } else if (Scroll.current  < window.scrollY) {
+      //   setClass(false) 
+      //   console.log("workfalse")
+      // }
+
+      if (200 < window.scrollY - Scroll.current && window.scrollY - Scroll.current <300 ){
+          // console.log(window.scrollY - Scroll.current)
+          // console.log("true")
+          setClass(false)
+          Scroll.current=window.scrollY;
+        }
+      else if (-200 > window.scrollY - Scroll.current && window.scrollY - Scroll.current >-300) {
+        // console.log("false")
+        setClass(true)
+        Scroll.current=window.scrollY;
+      }
+    
     }, [Scroll]
   );
 
