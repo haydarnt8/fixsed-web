@@ -249,18 +249,15 @@ html, body {
 } */
 
 .s2container .title{
-  /* font-size: 150%; */
   font-family: circularBlack ;
   color: #151515;
-  /* font-weight: 400; */
+
 }
 
-
+src/component.css
 .s2container .content{
-  /* font-size: 100%; */
   font-family:circularLight ;
   font-weight: 600;
-  /* color: #9c3104; */
   color: #000000b1;
 }
 
@@ -269,7 +266,6 @@ html, body {
   list-style: circle;
   list-style-position: outside;
 
-  /* color: #385075; */
 }
 
 
@@ -277,10 +273,25 @@ html, body {
 
 /* Section three */
 
-/* .s3container{
+.card{
+  max-width: 100%;
+  min-width: 30rem;
+}
 
-} */
+.s3container .title{
+  color: #151515;
+  font-family: circularBlack ; 
+  text-overflow: ellipsis;
+}
 
+.s3container .content{
+  
+  font-family:circularLight ;
+  overflow: hidden; 
+  font-weight: 600;
+  text-overflow: ellipsis;
+  color: #000000b1;
+}
 
 
 
@@ -288,55 +299,115 @@ html, body {
 
 /* Section Four */
 
+.s4container{
+  width: 80% ;
+  height: 75%;
+  background-color: #c2c2c24d;
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.countrycard{
+  margin: 0.2em;
+  padding: 16px;
+  display:flex ;
+  align-items: center;
+  background-color: #0000006f;
+  max-width: 24em;
+  min-width: 22em;
+  height: 12em;
+  border-radius: 2%;
+}
+
+.countrycard .image{
+  margin-right: 1rem;
+  border-radius: 2%;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 50%); 
+}
+
+.image img{
+  object-fit: cover;
+  filter: brightness(0.85) grayscale(0.25) invert(0.05) saturate(1.15) ;
+}
+
+
+.countrycard .content{
+  height: auto;
+  display:flex ;
+  flex-direction: column;
+  overflow: hidden;
+}
+.content .title{
+  font-family: circularBlack;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.content .description{
+  font-family: circularLight;
+  color: #cccccc;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
 .head .title{
   font-family: circularBlack ;
-  /* color: #e3e3e3; */
+  color: #d8d7d7;
+  
 }
 
-.head .content{
+ .head .content{
   font-family:circularLight;
-  /* color: #e3e3e3; */
+  color: #ADD8E6;
+  font-weight: 500;
 }
 
 
-  .s4container{
-    /* background-color: #000000d8; */
-
-  }
-
-  .countrycard{
-    border: 1px solid #151515;
-    max-width: 33%;
+  /* .countrycard{
+    max-width: 33.33%;
     min-width: 30rem;
-    margin: 0.125rem;
-
+    transition: 0.5s ease;
+    
+  }  */
+  /* .countrycard .bg{
+    filter: blur(2px) brightness(0.4) contrast(1.28) grayscale(0.1) ;
   }
 
-  .countrycard img{
-    filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
-    -webkit-filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
-    -moz-filter: grayscale(30%) brightness(80%) saturate(130%) contrast(110%) invert(10%);
-  }
+  .countrycard .flag{
+    box-shadow: 0px 0px 5px 0px rgba(52, 64, 74, 1);
+  } */
 
+  /* #countrycard :hover{
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    transition: 0.5s ease;
+    margin: 5px;
+  } */
+
+/* 
   .countrycard .title{
     font-family: circularBlack;
-    color: #151515;
+    color: #ffffff;
     overflow: hidden;
   }
 
   .countrycard .content{
     overflow: hidden;
     font-family: circularLight;
-    color: #151515;
-  }
+    color: #ffffff;
+  } */
 
 
-  .content .description{
+
+  /* .content .description{
     font-family: circularLight;
-    color: #a2a2a2;
+    color: #373739;
     font-size: 0.875rem;
     overflow: hidden;
-  }
+  } */
 
 
 
@@ -348,9 +419,9 @@ html, body {
   width: 500px;
   height: 300px;
   object-fit: cover;
-} */
+}
 
-/* .pos{
+.pos{
   border: 5px black solid;
   background-size: cover;
   background-position: center;
@@ -359,9 +430,9 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./image/bg2.jpg);
+  background-image: url(./image/bg2.jpg); */
 
-} */
+
 
 
 
