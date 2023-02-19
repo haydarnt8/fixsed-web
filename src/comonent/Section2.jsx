@@ -20,7 +20,6 @@ const Section2 = () => {
       backgroundPosition:"left center"
       }}
       >
-        jojjo
       </div>
       {/* border-2 border-black */}
       <div className='s2container max-h-full min-h-screen w-1/2 p-12 flex flex-col justify-center items-center ' >

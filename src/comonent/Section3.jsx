@@ -27,20 +27,7 @@ const Section3 = () => {
               </div>
 
 
-              <div className='card max-w-full h-40 flex justify-around items-center '>
-                <div className='flex h-full w-3/4 '>
-                  <div className='h-full w-60'> 
-                      <img src={card}  alt={card}  className='h-full w-full object-cover' />
-                  </div>
-                  <div className='ml-8 flex flex-col justify-around w-96'>
-                    <p className='title text-xl'>Airport Incident</p>
-                    <p className='content'>Following the US drone strike that killed Qasem Soleimani, the US Embassy in Baghdad urged Americans to leave Iraq due to a risk of attack by Iran or its proxies. The situation remains volatile</p>
-                  </div>
-                </div>
-                <div className='h-full flex items-end'>
-                  <button className='mb-5'>lern more</button>
-                </div>
-              </div>
+
               <div className='card max-w-full h-40 flex justify-around items-center '>
                 <div className='flex h-full w-3/4 '>
                   <div className='h-full w-60'>
@@ -52,9 +39,10 @@ const Section3 = () => {
                   </div>
                 </div>
                 <div className='h-full flex items-end'>
-                  <button ></button>lern more</button>
+                  <button>lern more</button>
                 </div>
-              </div>              <div className='card max-w-full h-40 flex justify-around items-center '>
+              </div>  
+              <div className='card max-w-full h-40 flex justify-around items-center '>
                 <div className='flex h-full w-3/4 '>
                   <div className='h-full w-60'>
                       <img src={card}  alt={card}  className='h-full w-full object-cover' />
@@ -65,9 +53,23 @@ const Section3 = () => {
                   </div>
                 </div>
                 <div className='h-full flex items-end'>
-                  <button className='mb-5'>lern more</button>
+                  <button>lern more</button>
                 </div>
-              </div>
+              </div> 
+              <div className='card max-w-full h-40 flex justify-around items-center '>
+                <div className='flex h-full w-3/4 '>
+                  <div className='h-full w-60'>
+                      <img src={card}  alt={card}  className='h-full w-full object-cover' />
+                  </div>
+                  <div className='ml-8 flex flex-col justify-around w-96'>
+                    <p className='title text-xl'>Airport Incident</p>
+                    <p className='content'>Following the US drone strike that killed Qasem Soleimani, the US Embassy in Baghdad urged Americans to leave Iraq due to a risk of attack by Iran or its proxies. The situation remains volatile</p>
+                  </div>
+                </div>
+                <div className='h-full flex items-end'>
+                  <button>lern more</button>
+                </div>
+              </div>         
 
 
 

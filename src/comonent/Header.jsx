@@ -52,7 +52,6 @@ const Headar = () => {
       window.removeEventListener('scroll',changeColor)
     };
   }, [handleNavigation , changeColor]);
-  window.addEventListener('scroll',changeColor)
 
   return (
     <>
