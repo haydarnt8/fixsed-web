@@ -1,6 +1,7 @@
 import React from 'react'
 import s2 from '../image/s22.png'
 import logo from '../image/logo1.png'
+import Fade from 'react-reveal/Fade';
 // import bg1 from '../image/bg1.webp'
 
 
@@ -21,9 +22,8 @@ const Section2 = () => {
       }}
       >
       </div>
-      {/* border-2 border-black */}
       <div className='s2container max-h-full min-h-screen w-1/2 p-12 flex flex-col justify-center items-center ' >
-        
+        <Fade bottom>
           <div className='w-32  mb-5'>
             <img src={logo} alt={logo} className='object-cover' />
           </div>
@@ -66,7 +66,7 @@ const Section2 = () => {
           <button className=' mt-8'>
               <p>Lern More</p>
             </button>
-        
+          </Fade>
       </div>
     </div>
     </>

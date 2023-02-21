@@ -4,7 +4,7 @@ import s6 from '../image/s6.png'
 const Section6 = () => {
   return (
     <>
-        <div className=' flex w-full h-screen ' >
+        {/* <div className=' flex w-full h-screen ' >
             <div className='h-full w-1/2'>
             </div>
             <div className='h-full w-1/2 ' style={{
@@ -16,7 +16,7 @@ const Section6 = () => {
             }}>
 
             </div>
-        </div>
+        </div> */}
     </>
     )
 }

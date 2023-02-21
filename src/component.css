@@ -15,6 +15,10 @@ html, body {
 }
 
 
+hr{
+  border: 1.5px #81818186 solid;
+}
+
 /* Header Section */
 
 .header {
@@ -365,6 +369,33 @@ src/component.css
 }
 
 
+
+
+
+
+
+
+
+
+/* Section Four */
+
+  .s5container .title{
+    font-family: circularBlack ;
+    color: #151515;
+  }
+
+  .s5container .content{
+    font-family:circularLight;
+    color: #000000b1;
+  }
+
+  .lawcard{
+    width: 52rem ;
+    height: 38rem;
+    /* border: #292929 solid 10px; */
+  }
+
+
   /* .countrycard{
     max-width: 33.33%;
     min-width: 30rem;
@@ -436,7 +467,3 @@ src/component.css
 
 
 
-
- .sheesh{
-  transition: 3s ease;
- }

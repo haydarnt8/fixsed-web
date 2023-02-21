@@ -1,6 +1,7 @@
 import React from 'react'
 import bg4 from '../image/iraq.png'
 import bg from '../image/s4.jpg'
+import Fade from 'react-reveal/Fade';
 
 const Section4 = () => {
   return (
@@ -23,6 +24,9 @@ backgroundSize: "cover"
        with regulations focused on national security and privacy concerns
       </p>
     </div>
+
+
+    <Fade left>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -36,6 +40,7 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -49,6 +54,9 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
+    <Fade right>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -62,6 +70,9 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
+    <Fade left>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -75,6 +86,7 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -88,6 +100,9 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
+    <Fade right>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -101,6 +116,9 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
+    <Fade left>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -114,6 +132,7 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -127,6 +146,9 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
+    <Fade right>
     <div className="countrycard ">
       <div className="image h-40 w-40 overflow-hidden">
         <img src={bg4} alt={bg4}  className='w-full h-full'/>
@@ -140,6 +162,8 @@ backgroundSize: "cover"
         </div>
       </div>
     </div>
+    </Fade>
+
   </div>
 </div>
 
@@ -153,7 +177,7 @@ export default Section4
 
 
 
-{/* <div className=' s4container w-full min-h-screen max-h-full mt-24'>
+/* <div className=' s4container w-full min-h-screen max-h-full mt-24'>
 <div className='head flex flex-col items-center justify-center mb-8'>
 <p className='title text-4xl mb-5 text-center'>
 Drone law in some Middle Eastern countries
@@ -179,4 +203,4 @@ Middle Eastern countries have varied drone laws ranging from restrictive to perm
   </div>
   </div>
   </div>
-</div> */}
+</div> */

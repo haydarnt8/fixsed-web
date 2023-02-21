@@ -1,11 +1,13 @@
 import React from 'react'
 import s3 from '../image/s3.jpg'
 import card from '../image/card.avif'
+import Fade from 'react-reveal/Fade';
 
 const Section3 = () => {
   return (
     <>
       <div className=' flex w-full max-h-full min-h-screen '>
+        <Fade bottom>
           <div className='s3container  w-1/2 flex flex-col min-h-screen max-h-full '>
             <div className='h-80 w-full flex flex-col items-center justify-between mt-14'>
             <p className='title text-4xl'>
@@ -76,6 +78,7 @@ const Section3 = () => {
 
             </div>
           </div>
+          </Fade>
           <div className='max-h-full min-h-screen w-1/2' style={{
             backgroundImage: `url(${s3})`,
             backgroundRepeat: "no-repeat",
