@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/haydarnt8.github.io/static/css/main.78621524.css",
-    "main.js": "/haydarnt8.github.io/static/js/main.88712819.js",
-    "static/media/s22.png": "/haydarnt8.github.io/static/media/s22.f320bc5d821793212e40.png",
-    "static/media/s55.png": "/haydarnt8.github.io/static/media/s55.16bfda19b7527daed24e.png",
-    "static/media/s6.png": "/haydarnt8.github.io/static/media/s6.2e645249bb9ea369f5bb.png",
-    "static/media/bg2.png": "/haydarnt8.github.io/static/media/bg2.1c194a62c547f81b905c.png",
-    "static/media/s4.jpg": "/haydarnt8.github.io/static/media/s4.1da103666c543c392e3a.jpg",
-    "static/media/s3.jpg": "/haydarnt8.github.io/static/media/s3.af9d697f3afdd868fe8a.jpg",
-    "static/media/s555.png": "/haydarnt8.github.io/static/media/s555.d3011df750b38f8bbfda.png",
-    "static/media/s1.jpg": "/haydarnt8.github.io/static/media/s1.7d8ef3276460e654a746.jpg",
-    "static/media/iraq.png": "/haydarnt8.github.io/static/media/iraq.d70f5dd1d945e3cc4bfb.png",
-    "static/media/card.png": "/haydarnt8.github.io/static/media/card.315cfdd2abbc68304a05.png",
-    "static/media/CircularStd-Light.otf": "/haydarnt8.github.io/static/media/CircularStd-Light.4a1a0bfcc3a53847a945.otf",
-    "static/media/CircularStd-Black.otf": "/haydarnt8.github.io/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
-    "index.html": "/haydarnt8.github.io/index.html",
-    "main.78621524.css.map": "/haydarnt8.github.io/static/css/main.78621524.css.map",
-    "main.88712819.js.map": "/haydarnt8.github.io/static/js/main.88712819.js.map"
+    "main.css": "/fixsed-web/static/css/main.f2b7c41d.css",
+    "main.js": "/fixsed-web/static/js/main.4c1159b5.js",
+    "static/media/s22.png": "/fixsed-web/static/media/s22.f320bc5d821793212e40.png",
+    "static/media/s55.png": "/fixsed-web/static/media/s55.16bfda19b7527daed24e.png",
+    "static/media/s6.png": "/fixsed-web/static/media/s6.2e645249bb9ea369f5bb.png",
+    "static/media/bg2.png": "/fixsed-web/static/media/bg2.1c194a62c547f81b905c.png",
+    "static/media/s4.jpg": "/fixsed-web/static/media/s4.1da103666c543c392e3a.jpg",
+    "static/media/s3.jpg": "/fixsed-web/static/media/s3.af9d697f3afdd868fe8a.jpg",
+    "static/media/s555.png": "/fixsed-web/static/media/s555.d3011df750b38f8bbfda.png",
+    "static/media/s1.jpg": "/fixsed-web/static/media/s1.7d8ef3276460e654a746.jpg",
+    "static/media/iraq.png": "/fixsed-web/static/media/iraq.d70f5dd1d945e3cc4bfb.png",
+    "static/media/card.png": "/fixsed-web/static/media/card.315cfdd2abbc68304a05.png",
+    "static/media/CircularStd-Light.otf": "/fixsed-web/static/media/CircularStd-Light.4a1a0bfcc3a53847a945.otf",
+    "static/media/CircularStd-Black.otf": "/fixsed-web/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
+    "index.html": "/fixsed-web/index.html",
+    "main.f2b7c41d.css.map": "/fixsed-web/static/css/main.f2b7c41d.css.map",
+    "main.4c1159b5.js.map": "/fixsed-web/static/js/main.4c1159b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.78621524.css",
-    "static/js/main.88712819.js"
+    "static/css/main.f2b7c41d.css",
+    "static/js/main.4c1159b5.js"
   ]
 }
