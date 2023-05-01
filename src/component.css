@@ -80,6 +80,7 @@ hr{
 
 @media screen and (max-width:940px) {
     .header {
+        height: 75px;
         max-width: 100%;
         background-color: rgba(0,0,0,.9);
     }
@@ -277,9 +278,16 @@ src/component.css
 
 /* Section three */
 
+.s3bg {
+  background-size: 50% auto;
+  background-attachment: fixed;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
 .card{
   max-width: 100%;
-  min-width: 30rem;
+  /* min-width: 100%; */
 }
 
 .s3container .title{
@@ -288,13 +296,25 @@ src/component.css
   text-overflow: ellipsis;
 }
 
-.s3container .content{
+.cardcontent .description{
   
   font-family:circularLight ;
-  overflow: hidden; 
   font-weight: 600;
-  text-overflow: ellipsis;
   color: #000000b1;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  /* border: #151515 solid 4px; */
+
+  
+}
+
+.card img {
+  width: 90%;
+  object-fit: cover;
+  aspect-ratio: 2/2.5;
 }
 
 
@@ -304,6 +324,7 @@ src/component.css
 /* Section Four */
 
 .s4container{
+  padding: 15px;
   width: 80% ;
   height: 75%;
   background-color: #c2c2c24d;
@@ -319,8 +340,9 @@ src/component.css
   align-items: center;
   background-color: #0000006f;
   max-width: 24em;
-  min-width: 22em;
-  height: 12em;
+  /* min-width: 20em; */
+  aspect-ratio: 4/1.9;
+  /* height: 12em; */
   border-radius: 2%;
 }
 
@@ -336,24 +358,28 @@ src/component.css
 }
 
 
-.countrycard .content{
+.countrycard .countrycardcontent{
   height: auto;
   display:flex ;
   flex-direction: column;
   overflow: hidden;
 }
-.content .title{
+.countrycardcontent .title{
   font-family: circularBlack;
   color: rgb(255, 255, 255);
   font-size: 1rem;
   margin-bottom: 6px;
   overflow: hidden;
 }
-.content .description{
+.countrycardcontent .description{
   font-family: circularLight;
   color: #cccccc;
   font-size: 0.875rem;
-  overflow: hidden;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .head .title{
@@ -362,7 +388,7 @@ src/component.css
   
 }
 
- .head .content{
+ .head .countrycardcontent{
   font-family:circularLight;
   color: #ADD8E6;
   font-weight: 500;
@@ -378,6 +404,14 @@ src/component.css
 
 
 /* Section Four */
+
+  .s4bg{
+    /* background-size: 50% auto; */
+    background-attachment: fixed;
+    background-size: cover ;
+    background-repeat: no-repeat;
+
+  }
 
   .s5container .title{
     font-family: circularBlack ;
@@ -467,3 +501,83 @@ src/component.css
 
 
 
+@media (max-width : 430px){
+  body{
+    /* background-color: #e7e7e7; */
+  }
+
+  .bg-img  {
+    display: none;
+  }
+
+  .s2{
+    flex-direction: column;
+  }
+  .s2bg{
+    display: none;
+  }
+  .s2container{
+    width: 100%;
+  }
+  .s2container .content{
+    width: 100%;
+  }
+
+
+  .s3{
+    flex-direction: column-reverse;
+    
+  }
+  .s3container{
+    width: 100%;
+  }
+
+  .s3bg{
+    /* display: none; */
+    /* border: #151515 solid 3px; */
+    width: 100%;
+    min-height: 40vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .accidentscontainer{
+    padding: 12px;
+  }
+  .card{
+    margin-bottom: 15px;
+    width: 100%;
+    aspect-ratio: 2/4;
+    /* border: #ad0808 solid 4px; */
+    display: flex;
+    /* align-items: stretch; */
+    /* overflow: initial; */
+    justify-content: space-between ;
+  }
+
+  .cardimg{
+    /* height: 100%; */
+    /* width: 100%; */
+    aspect-ratio: 1/1.1;
+    /* border: #000000 solid 4px; */
+    /* margin-right: 0%; */
+  }
+  .card button{
+    width: 95px;
+    /* width: 75%; */
+    /* aspect-ratio: 1/1.25; */
+  }
+  .card img{
+    width: 100%;
+    height: 100%;
+  }
+  .cardcontent{
+    margin-left: 9px;
+    /* border: #0a1525 solid 4px; */
+    /* width: 300px; */
+  }
+
+}

@@ -11,8 +11,8 @@ const Section2 = () => {
 
   return (
     <>
-    <div className=' s2 flex w-full max-h-full min-h-screen '>
-      <div className=' w-1/2 flex max-h-full min-h-screen' 
+    <div id='about' className=' s2 flex w-full max-h-full min-h-screen '>
+      <div className=' s2bg w-1/2 flex max-h-full min-h-screen' 
       style={{backgroundImage: `url(${s2})`,
       // backgroundColor:"#D6E3D9",
       backgroundRepeat: "no-repeat",
@@ -27,10 +27,10 @@ const Section2 = () => {
           <div className='w-32  mb-5'>
             <img src={logo} alt={logo} className='object-cover' />
           </div>
-          <div className='title text-4xl '>
+          <div className='title text-4xl'>
             <p>ABOUT DRONE</p>
           </div>
-          <div className='content text-base m-5'>
+          <div className='content text-base w-10/12'>
             <p>A drone is an unmanned aerial vehicle (UAV) equipped with cameras, sensors, GPS and other technology.
               They can be operated remotely or autonomously, and used for various applications such as aerial photography, inspection, delivery, search and rescue, military operations, etc.
               Advances in technology have made drones increasingly accessible, versatile, and popular.
@@ -44,8 +44,8 @@ const Section2 = () => {
           <div className='title text-3xl m-5'>
             <p>Types of drones</p>
           </div>
-          <div className='content text-base'>
-            <ul className='list'>
+          <div className='content text-base w-10/12'>
+            <ul className=''>
               <li>
                 Consumer drones: used for recreation and hobby purposes.
               </li>
