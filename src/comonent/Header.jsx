@@ -85,16 +85,19 @@ const Headar = () => {
                         <a href='#about' onClick={closeMenu}>About</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#testimonials' onClick={closeMenu}>Testimonials</a>
+                        <a href='#accidents' onClick={closeMenu}>Accidents</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                        <a href='#countries' onClick={closeMenu}>Countries</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                        <a href='#internationallaws' onClick={closeMenu}>International Laws</a>
                     </li>
                     <li className='nav-item'>
-                        <a href='#demo' onClick={closeMenu}>Demo</a>
+                        <a href='#faq' onClick={closeMenu}>FAQ</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href='#faq' onClick={closeMenu}>Contact</a>
                     </li>
                 </ul>
             </nav>

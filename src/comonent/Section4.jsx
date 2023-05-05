@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Section4 = () => {
   return (
     <>
-<div className='s4bg flex w-full h-full justify-center items-center ' 
+<div id='countries' className='s4bg  flex w-full h-full justify-center items-center ' 
 style={{backgroundImage: `url(${bg})`,}}>
 
   <div className='s4container mt-16 mb-16 max-h-full min-h-screen'>

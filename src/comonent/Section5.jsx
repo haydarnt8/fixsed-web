@@ -9,10 +9,10 @@ const Section5 = () => {
 
   return (
     <>
-    <div className='s5container'>
+    <div id='internationallaws' className='s5container'>
       <div className='w-full flex items-center justify-center'>
-        <div className='h-96 flex justify-around items-center m-10'>
-          <div className=' h-56 flex items-center' >
+        <div className='s5title h-96 flex justify-around items-center m-10'>
+          <div className='s5logo h-56 flex items-center' >
             <img src={logo} alt="logo" className='w-full h-full object-cover' />
           </div>
           <Fade>
@@ -27,19 +27,19 @@ const Section5 = () => {
       </div>
 
 
-      <div className='w-full h-72 flex justify-center items-center'  style={{
+      <div className='s5bg1 w-full h-72 flex justify-center items-center'  style={{
         backgroundImage: `url(${bg1})`,
         backgroundRepeat: "no-repeat",
-        // backgroundAttachment: "fixed",
         backgroundSize: "cover",
       }}>
-        <Fade left>
+        {/* <Fade left> */}
         <div className='title h-2/4 w-4/5 flex items-end text-5xl'>
             <p className='text-end text-gray-800'>General International Laws</p>
         </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
-        <div className='w-full h-72 mb-12 mt-12 p-2 flex flex-col items-center justify-around'>
+
+        <div className='s5bg1des w-full h-72 mb-12 mt-12 p-2 flex flex-col items-center justify-around'>
         <Fade bottom>
           <div className='content w-4/6 text-xl'>
             <p>
@@ -52,26 +52,25 @@ const Section5 = () => {
             </p>
           </div>
           </Fade>
-          <div>
+          <div className='flex justify-center'>
             <button>Lern more</button>
           </div>
   
         </div>
-        <div className='w-full h-72 flex justify-center items-center'  style={{
+        <div className='s5bg2 w-full h-72 flex justify-center items-center'  style={{
         backgroundImage: `url(${bg2})`,
         backgroundRepeat: "no-repeat",
-        // backgroundAttachment: "fixed",
         backgroundSize: "cover",
       }}>
-        <Fade right>
+        {/* <Fade right> */}
         <div className='title h-2/4 w-4/5 justify-end flex items-end text-5xl'>
             <p className='text-end text-gray-800'>Permittance And Non-Permittance</p>
         </div>
-        </Fade>
+        {/* </Fade> */}
       </div>
 
 
-      <div className='w-full h-full mb-12 mt-12 p-2 flex flex-col items-center justify-around'>
+      <div className='s5bg2des w-full h-full mb-12 mt-12 p-2 flex flex-col items-center justify-around'>
       <Fade bottom>
         <div className='content w-4/6 text-xl mb-14'>
             <p>
@@ -85,8 +84,8 @@ const Section5 = () => {
         <div className='mb-10'>
           <button>Lern more</button>
         </div>
-        <div className=' lawcard flex flex-wrap justify-around items-center  '>
-        <Fade left>
+        {/* <div className=' lawcard flex flex-wrap justify-around items-center  '>
+        <Fade >
           <div className='w-96 h-64 p-7 flex flex-col justify-start border-gray-400 border-2 '>
             <div className='title text-xl mb-3 '>
                 <p>Restricted Airspace</p>
@@ -106,7 +105,7 @@ const Section5 = () => {
             </div>
           </div>
           </Fade>
-          <Fade right>
+          <Fade >
           <div className='w-96 h-64 p-7 flex flex-col justify-start border-gray-400 border-2 '>
             <div className='title text-xl mb-3 '>
                 <p>Public Areas</p>
@@ -126,7 +125,7 @@ const Section5 = () => {
             </div>
           </div>
           </Fade>
-        </div>
+        </div> */}
 
       </div>
 

@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Section3 = () => {
   return (
     <>
-      <div className='s3 flex w-full max-h-full min-h-screen '>
+      <div id='accidents' className='s3 flex w-full max-h-full min-h-screen '>
         <Fade bottom>
           <div className='s3container  w-1/2 flex flex-col min-h-screen max-h-full '>
             <div className='h-80 w-full flex flex-col items-center justify-between mt-14'>
@@ -28,9 +28,9 @@ const Section3 = () => {
                 <p className='title text-center mb-6 text-3xl'>Some Accidents Caused By The Drone In Iraq</p>
               </div>
 
+              
 
-
-              <div className='card max-w-full h-40 flex justify-around items-center mb-1 '>
+              <div className='accidentscard max-w-full h-40 flex justify-around items-center mb-1 '>
                 <div className='flex h-full w-3/4 '>
                   <div className='cardimg h-full w-4/12'>
                       <img src={card}  alt={card}  />
@@ -44,7 +44,7 @@ const Section3 = () => {
                   <button>lern more</button>
                 </div>
               </div>  
-              <div className='card max-w-full h-40 flex justify-around items-center mb-1 '>
+              <div className='accidentscard max-w-full h-40 flex justify-around items-center mb-1 '>
                 <div className='flex h-full w-3/4 '>
                   <div className='cardimg h-full w-4/12'>
                       <img src={card}  alt={card}  />
@@ -58,7 +58,7 @@ const Section3 = () => {
                   <button>lern more</button>
                 </div>
               </div> 
-              <div className='card max-w-full h-40 flex justify-around items-center mb-1  '>
+              <div className='accidentscard max-w-full h-40 flex justify-around items-center mb-1  '>
                 <div className='flex h-full w-3/4 '>
                   <div className='cardimg h-full w-4/12'>
                       <img src={card}  alt={card}  />
@@ -72,10 +72,6 @@ const Section3 = () => {
                   <button>lern more</button>
                 </div>
               </div>         
-
-
-
-
             </div>
           </div>
           </Fade>
