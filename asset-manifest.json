@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fixsed-web/static/css/main.add027fd.css",
-    "main.js": "/fixsed-web/static/js/main.2fe6575b.js",
+    "main.css": "/fixsed-web/static/css/main.7d8dee41.css",
+    "main.js": "/fixsed-web/static/js/main.c55051db.js",
     "static/media/s22.png": "/fixsed-web/static/media/s22.f320bc5d821793212e40.png",
     "static/media/s55.png": "/fixsed-web/static/media/s55.16bfda19b7527daed24e.png",
     "static/media/s6.png": "/fixsed-web/static/media/s6.2e645249bb9ea369f5bb.png",
@@ -15,11 +15,11 @@
     "static/media/CircularStd-Light.otf": "/fixsed-web/static/media/CircularStd-Light.4a1a0bfcc3a53847a945.otf",
     "static/media/CircularStd-Black.otf": "/fixsed-web/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
     "index.html": "/fixsed-web/index.html",
-    "main.add027fd.css.map": "/fixsed-web/static/css/main.add027fd.css.map",
-    "main.2fe6575b.js.map": "/fixsed-web/static/js/main.2fe6575b.js.map"
+    "main.7d8dee41.css.map": "/fixsed-web/static/css/main.7d8dee41.css.map",
+    "main.c55051db.js.map": "/fixsed-web/static/js/main.c55051db.js.map"
   },
   "entrypoints": [
-    "static/css/main.add027fd.css",
-    "static/js/main.2fe6575b.js"
+    "static/css/main.7d8dee41.css",
+    "static/js/main.c55051db.js"
   ]
 }
