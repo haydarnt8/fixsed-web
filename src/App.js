@@ -18,16 +18,16 @@ function App() {
     <>
      
         <Routes>
-          <Route exact path='/' element={<Home />}></Route>
-          <Route path='about-website' element={<AboutWebsite />}></Route>
-          <Route path='about-drone' element={<AboutDrone />}></Route>
-          <Route path='drone-type' element={<DroneType />}></Route>
-          <Route path='drone-importance' element={<Importance />}></Route>
-          <Route path='drone-accidents' element={<Accidents />}></Route>
-          <Route path='middle-east-law/:id' element={<MiddleEastLaw />}></Route>
-          <Route path='general-laws' element={<GeneralLaws />}></Route>
-          <Route path='permittance' element={<Permittance />}></Route>
-          <Route path='faq' element={<Faq />}></Route>
+          <Route exact path='fixsed-web' element={<Home />}></Route>
+          <Route path='fixsed-web/about-website' element={<AboutWebsite />}></Route>
+          <Route path='fixsed-web/about-drone' element={<AboutDrone />}></Route>
+          <Route path='fixsed-web/drone-type' element={<DroneType />}></Route>
+          <Route path='fixsed-web/drone-importance' element={<Importance />}></Route>
+          <Route path='fixsed-web/drone-accidents' element={<Accidents />}></Route>
+          <Route path='fixsed-web/middle-east-law/:id' element={<MiddleEastLaw />}></Route>
+          <Route path='fixsed-web/general-laws' element={<GeneralLaws />}></Route>
+          <Route path='fixsed-web/permittance' element={<Permittance />}></Route>
+          <Route path='fixsed-web/faq' element={<Faq />}></Route>
         </Routes>
   
       <Footer />

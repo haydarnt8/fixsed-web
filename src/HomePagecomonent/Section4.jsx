@@ -32,7 +32,7 @@ const Section4 = () => {
 
           {cards.map((card, index) => (
             
-            <Link to={`/middle-east-law/${card.id}`} onClick={goToTop} >
+            <Link to={`middle-east-law/${card.id}`} onClick={goToTop} >
               <Fade left>
                 <div className="countrycard ">
                   <div className="image h-40 w-40 overflow-hidden">
