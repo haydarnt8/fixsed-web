@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/fixsed-web/static/css/main.7d8dee41.css",
-    "main.js": "/fixsed-web/static/js/main.c55051db.js",
+    "main.css": "/fixsed-web/static/css/main.54f7908a.css",
+    "main.js": "/fixsed-web/static/js/main.e839a447.js",
     "static/media/s22.png": "/fixsed-web/static/media/s22.f320bc5d821793212e40.png",
     "static/media/s55.png": "/fixsed-web/static/media/s55.16bfda19b7527daed24e.png",
-    "static/media/s6.png": "/fixsed-web/static/media/s6.2e645249bb9ea369f5bb.png",
     "static/media/bg2.png": "/fixsed-web/static/media/bg2.1c194a62c547f81b905c.png",
     "static/media/s4.jpg": "/fixsed-web/static/media/s4.1da103666c543c392e3a.jpg",
     "static/media/s3.jpg": "/fixsed-web/static/media/s3.af9d697f3afdd868fe8a.jpg",
-    "static/media/s555.png": "/fixsed-web/static/media/s555.d3011df750b38f8bbfda.png",
     "static/media/s1.jpg": "/fixsed-web/static/media/s1.7d8ef3276460e654a746.jpg",
-    "static/media/iraq.png": "/fixsed-web/static/media/iraq.d70f5dd1d945e3cc4bfb.png",
     "static/media/card.png": "/fixsed-web/static/media/card.315cfdd2abbc68304a05.png",
     "static/media/CircularStd-Light.otf": "/fixsed-web/static/media/CircularStd-Light.4a1a0bfcc3a53847a945.otf",
     "static/media/CircularStd-Black.otf": "/fixsed-web/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
     "index.html": "/fixsed-web/index.html",
-    "main.7d8dee41.css.map": "/fixsed-web/static/css/main.7d8dee41.css.map",
-    "main.c55051db.js.map": "/fixsed-web/static/js/main.c55051db.js.map"
+    "main.54f7908a.css.map": "/fixsed-web/static/css/main.54f7908a.css.map",
+    "main.e839a447.js.map": "/fixsed-web/static/js/main.e839a447.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d8dee41.css",
-    "static/js/main.c55051db.js"
+    "static/css/main.54f7908a.css",
+    "static/js/main.e839a447.js"
   ]
 }
