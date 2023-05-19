@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fixsed-web/static/css/main.54f7908a.css",
-    "main.js": "/fixsed-web/static/js/main.e839a447.js",
+    "main.js": "/fixsed-web/static/js/main.2a8a9253.js",
     "static/media/s22.png": "/fixsed-web/static/media/s22.f320bc5d821793212e40.png",
     "static/media/s55.png": "/fixsed-web/static/media/s55.16bfda19b7527daed24e.png",
     "static/media/bg2.png": "/fixsed-web/static/media/bg2.1c194a62c547f81b905c.png",
@@ -13,10 +13,10 @@
     "static/media/CircularStd-Black.otf": "/fixsed-web/static/media/CircularStd-Black.757b8ac8efa71be3fcd0.otf",
     "index.html": "/fixsed-web/index.html",
     "main.54f7908a.css.map": "/fixsed-web/static/css/main.54f7908a.css.map",
-    "main.e839a447.js.map": "/fixsed-web/static/js/main.e839a447.js.map"
+    "main.2a8a9253.js.map": "/fixsed-web/static/js/main.2a8a9253.js.map"
   },
   "entrypoints": [
     "static/css/main.54f7908a.css",
-    "static/js/main.e839a447.js"
+    "static/js/main.2a8a9253.js"
   ]
 }
