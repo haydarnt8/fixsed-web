@@ -1,9 +1,16 @@
 import React from "react";
-import bg4 from "../image/iraq.png";
+// import bg4 from "../image/iraq.png";
 import bg from "../image/s4.jpg";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
+import { Getdata } from "../function/getdata";
+import { useNavigate } from "react-router-dom";
 
 const Section4 = () => {
+  const goToTop = () => {
+    window.scrollTo({ top: 0 });
+  };
+  const cards = Getdata("countries");
   return (
     <>
       <div
@@ -23,170 +30,30 @@ const Section4 = () => {
             </p>
           </div>
 
-          <Fade left>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
+          {cards.map((card, index) => (
+            
+            <Link to={`/middle-east-law/${card.id}`} onClick={goToTop} >
+              <Fade left>
+                <div className="countrycard ">
+                  <div className="image h-40 w-40 overflow-hidden">
+                    <img
+                      src={card.url}
+                      alt={card.title}
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="countrycardcontent w-1/2">
+                    <div className="title">
+                      <p>{card.title}</p>
+                    </div>
+                    <div className="description">
+                      <p>{card.description}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
-
-          <Fade right>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
-
-          <Fade left>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
-
-          <Fade right>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
-
-          <Fade left>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
-
-          <Fade right>
-            <div className="countrycard ">
-              <div className="image h-40 w-40 overflow-hidden">
-                <img src={bg4} alt={bg4} className="w-full h-full" />
-              </div>
-              <div className="countrycardcontent w-1/2">
-                <div className="title">
-                  <p>Hello worled</p>
-                </div>
-                <div className="description">
-                  <p>
-                    Drones have been used in Iraq for surveillance and
-                    airstrikes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </Fade>
+              </Fade>
+            </Link>
+          ))}
         </div>
       </div>
     </>

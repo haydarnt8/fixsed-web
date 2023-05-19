@@ -4,8 +4,10 @@ import s1 from "../image/s1.jpg";
 import bg2 from "../image/bg2.png";
 // import logo2 from '../image/logo1.png'
 import "../component.css";
+import { useNavigate } from "react-router-dom";
 // import { Slide } from 'react-reveal'
 const Section1 = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div
@@ -41,8 +43,8 @@ const Section1 = () => {
             for the protection of civilians.
             <br />
           </p>
-          <button className="w-28 h-10 mt-9">
-            <p>Lern More</p>
+          <button className="w-28 h-10 mt-9" onClick={()=>navigate('about-website') }>
+            <p>Learn More</p>
           </button>
         </div>
       </div>

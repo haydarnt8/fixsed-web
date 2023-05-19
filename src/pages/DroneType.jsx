@@ -1,15 +1,16 @@
 import React from "react";
-import { Getdata } from "../function/getdata";
 import { Stickynav } from "../HomePagecomonent/stickynav";
+import { Getdata } from "../function/getdata";
 
-const Accidents = () => {
-  const parts = Getdata("accidents");
+const DroneType = () => {
+  const parts = Getdata("dronetype");
+  console.log(parts)
   return (
     <>
-      <div className="flex flex-col items-center">
+      <body className="flex flex-col items-center">
         <header id="header">
           <div className="header-banner">
-            <h1>Drone Accidents</h1>
+            <h1>Drone Type</h1>
           </div>
           <div className="clear"></div>
         </header>
@@ -58,9 +59,9 @@ const Accidents = () => {
             ))}
           </aside>
         </section>
-      </div>
+      </body>
     </>
   );
 };
 
-export default Accidents;
+export default DroneType;

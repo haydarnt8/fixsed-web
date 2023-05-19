@@ -5,10 +5,12 @@ import Section3 from "../HomePagecomonent/Section3";
 import Section4 from "../HomePagecomonent/Section4";
 import Section5 from "../HomePagecomonent/Section5";
 import Section6 from "../HomePagecomonent/Section6";
+import Headar from "../HomePagecomonent/Header";
 
 const Home = () => {
   return (
     <>
+      <Headar />
       <Section1 />
       <Section2 />
       <Section3 />

@@ -2,14 +2,14 @@ import React from "react";
 import { Getdata } from "../function/getdata";
 import { Stickynav } from "../HomePagecomonent/stickynav";
 
-const Accidents = () => {
-  const parts = Getdata("accidents");
+const Importance = () => {
+  const parts = Getdata("importance");
   return (
     <>
       <div className="flex flex-col items-center">
         <header id="header">
           <div className="header-banner">
-            <h1>Drone Accidents</h1>
+            <h1>Why Drone Laws Matter</h1>
           </div>
           <div className="clear"></div>
         </header>
@@ -63,4 +63,4 @@ const Accidents = () => {
   );
 };
 
-export default Accidents;
+export default Importance;

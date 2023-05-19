@@ -14,14 +14,6 @@ const Headar = () => {
 
   const handleNavigation = useCallback(
     (e) => {
-      // const window = e.currentTarget;
-      // if (Scroll.current  > window.scrollY) {
-      //   setClass(true)
-      //   console.log("worktrue")
-      // } else if (Scroll.current  < window.scrollY) {
-      //   setClass(false)
-      //   console.log("workfalse")
-      // }
 
       if (
         200 < window.scrollY - Scroll.current &&

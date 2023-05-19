@@ -2,9 +2,25 @@ import React from "react";
 import s2 from "../image/s22.png";
 import logo from "../image/logo1.png";
 import Fade from "react-reveal/Fade";
+import { useNavigate } from "react-router-dom";
+import { Getdata } from "../function/getdata";
 // import bg1 from '../image/bg1.webp'
 
 const Section2 = () => {
+  const goToTop = () => {
+    window.scrollTo({ top: 0 });
+  };
+  const navigate = useNavigate();
+
+  const handleClick1 = () => {
+    goToTop();
+    navigate("about-drone"); 
+  };
+  const handleClick2 = () => {
+    goToTop();
+    navigate("drone-type"); 
+  };
+  const parts = Getdata("dronetype");
   return (
     <>
       <div id="about" className=" s2 flex w-full max-h-full min-h-screen ">
@@ -38,8 +54,11 @@ const Section2 = () => {
               </p>
             </div>
             <div>
-              <button className=" mt-4 mb-10">
-                <p>Lern More</p>
+              <button
+                className=" mt-4 mb-10"
+                onClick={handleClick1}
+              >
+                <p>Learn More</p>
               </button>
             </div>
             <div className="title text-3xl m-5">
@@ -47,28 +66,20 @@ const Section2 = () => {
             </div>
             <div className="content text-base w-10/12">
               <ul className="">
-                <li>
-                  Consumer drones: used for recreation and hobby purposes.
-                </li>
-                <li>
-                  Photography and videography drones: equipped with cameras for
-                  aerial footage.
-                </li>
-                <li>
-                  Industrial drones: used for inspections, mapping, and
-                  surveying.
-                </li>
-                <li>
-                  Delivery drones: used for the delivery of goods and packages.
-                </li>
-                <li>
-                  Military drones: used by armed forces for reconnaissance and
-                  surveillance purposes.
-                </li>
+                {parts.map((part) => {
+                  return (
+                    <li>
+                      <p>
+                        <b className="text-lg "> {part.title}:</b>{" "}
+                        {part.description}
+                      </p>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
-            <button className=" mt-8">
-              <p>Lern More</p>
+            <button className=" mt-8" onClick={handleClick2}>
+              <p>Learn More</p>
             </button>
           </Fade>
         </div>
@@ -78,5 +89,3 @@ const Section2 = () => {
 };
 
 export default Section2;
-
-// scale = max(background_positioning_area_width / background_image_width, background_positioning_area_height / background_image_height)

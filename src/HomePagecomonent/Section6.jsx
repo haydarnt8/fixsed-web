@@ -1,55 +1,47 @@
 import React, { useState } from "react";
-import s6 from "../image/s6.png";
-import bg1 from "../image/s55.png";
-import bg2 from "../image/s555.png";
-import {
-  AiOutlineFrown,
-  AiOutlineDoubleLeft,
-  AiOutlineDoubleRight,
-  AiOutlineLike,
-} from "react-icons/ai";
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
+import { TbHandClick } from "react-icons/tb";
+import { Getdata } from "../function/getdata";
+import { Link } from "react-router-dom";
+import { db } from "../firebaseconfig";
+import { collection, addDoc } from "firebase/firestore";
 
-const cards = [
-  {
-    rating: "4.5",
-    image: s6,
-    title: "Basket Ball",
-    description:
-      "I show you how to make a card group easily and very functional with the use of flexbox and its magic and JavaScript.",
-  },
-  {
-    rating: "4.4",
-    image: bg1,
-    title: "Volley Ball",
-    description:
-      "I show you how to make a card group easily and very functional with the use of flexbox and its magic and JavaScript.",
-  },
-  {
-    rating: "4.7",
-    image: bg2,
-    title: "Disco Ball",
-    description:
-      "I show you how to make a card group easily and very functional with the use of flexbox and its magic and JavaScript.",
-  },
-  {
-    rating: "4.7",
-    image: bg2,
-    title: "Disco Ball",
-    description:
-      "I show you how to make a card group easily and very functional with the use of flexbox and its magic and JavaScript.",
-  },
-  {
-    rating: "4.7",
-    image: bg2,
-    title: "Disco Ball",
-    description:
-      "I show you how to make a card group easily and very functional with the use of flexbox and its magic and JavaScript.",
-  },
-];
+// Inside your component's render method or functional component
 
 const Section6 = () => {
+  // const fb = collection(db, "fb");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const cards = Getdata("faq");
   const [scrollPos, setScrollPos] = useState(0);
 
+  // const feedback = async () => {
+
+  //   await addDoc(fb, { name: name, email: email, text: text });
+  // };
+
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const feedback = async () => {
+    if (!isValidEmail(email) || name =="" || text == "") {
+      console.error("error");
+      document.getElementById('msg').innerHTML = 'Error!'
+      return;
+    } 
+
+    try {
+      const feedbackRef = collection(db, "fb"); // Replace 'feedback' with your desired collection name
+      await addDoc(feedbackRef, { name: name, email: email, text: text });
+      console.log("Feedback added successfully!");
+      document.getElementById('msg').innerHTML = 'added successfully!'
+    } catch (error) {
+      console.error("Error adding feedback:", error);
+    }
+  };
   function handleScrollNext() {
     console.log(window.innerWidth);
     const container = document.querySelector(".card-content");
@@ -96,38 +88,48 @@ const Section6 = () => {
           </div>
           <div id="form-main">
             <div id="form-div">
-              <form className="form" id="form1">
+              <div className="form" id="form1">
                 <p className="name">
                   <input
                     name="name"
                     type="text"
-                    className="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                    className=" feedback-input"
                     placeholder="Name"
                     id="name"
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
                   />
                 </p>
                 <p className="email">
                   <input
                     name="email"
                     type="text"
-                    className="validate[required,custom[email]] feedback-input"
+                    className=" feedback-input"
                     id="email"
                     placeholder="Email"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                   />
                 </p>
                 <p className="text">
                   <textarea
                     name="text"
-                    className="validate[required,length[6,300]] feedback-input"
+                    className=" feedback-input"
                     id="comment"
                     placeholder="Comment"
+                    onChange={(e) => {
+                      setText(e.target.value);
+                    }}
                   ></textarea>
                 </p>
                 <div className="submit">
-                  <input type="submit" value="SEND" id="button-blue" />
+                  <input type="submit" onClick={feedback} value="SEND" id="button-blue" />
                   <div className="ease"></div>
+                  <div className="w-full mt-8 text-xl text-center" id="msg"> </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -154,20 +156,24 @@ const Section6 = () => {
             </button>
             <div className="card-content" style={{ scrollLeft: scrollPos }}>
               {cards.map((card, index) => (
-                <div className="card" key={index}>
-                  <h4>{card.rating}</h4>
-                  <i className="lar la-heart">
-                    <AiOutlineLike />
-                  </i>
-                  <div className="card-text mt-10">
-                    <h2>{card.title}</h2>
-                    <p>{card.description}</p>
+                <Link
+                  to={`faq#${card.id}`}
+                  onClick={() => window.scrollTo({ top: 0 })}
+                >
+                  <div className="card" key={index}>
+                    <i className="lar la-heart">
+                      <TbHandClick />
+                    </i>
+                    <div className="card-text mt-10">
+                      <h2>FAQ:</h2>
+                      <p>{card.question}</p>
+                    </div>
+                    <div className="card-text2">
+                      <label className="text-xl">Ans:</label>
+                      <p>{card.answer}</p>
+                    </div>
                   </div>
-                  <div className="card-text2">
-                    <label className="text-xl">Ans:</label>
-                    <p>{card.description}</p>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
             <button id="next" className="btn" onClick={handleScrollNext}>

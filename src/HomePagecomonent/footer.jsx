@@ -4,7 +4,7 @@ const footer = () => {
   return (
     <>
       <footer className="footer-distributed">
-        <div className="footer-right">
+        {/* <div className="footer-right">
           <a href="#">
             <i className="fa fa-facebook"></i>
           </a>
@@ -17,24 +17,24 @@ const footer = () => {
           <a href="#">
             <i className="fa fa-github"></i>
           </a>
-        </div>
+        </div> */}
 
         <div className="footer-left">
           <p className="footer-links">
-            <a className="link-1" href="#home">
+            <a className="link-1" href="/#home">
               Home
             </a>
-            <a href="#about">About</a>
+            <a href="/#about">About</a>
 
-            <a href="#accidents">Accidents</a>
+            <a href="/#accidents">Accidents</a>
 
-            <a href="countries">Countries</a>
+            <a href="/#countries">Countries</a>
 
-            <a href="#internationallaws">International Laws</a>
+            <a href="/#internationallaws">International Laws</a>
 
-            <a href="#faq">FAQ</a>
+            <a href="/#faq">FAQ</a>
 
-            <a href="#faq">Contact</a>
+            <a href="/#faq">Contact</a>
           </p>
 
           <p>DRONE UNDER INTERNATIONAL HUMANITARIAN</p>
